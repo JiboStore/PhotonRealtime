@@ -55,7 +55,7 @@ public class DemoGUI : MonoBehaviour
     void Start()
     {
         playground = GameObject.Find("Playground");
-        startAlpha = playground.renderer.materials[1].color;
+        startAlpha = playground.GetComponent<Renderer>().materials[1].color;
     }
 
 
@@ -252,15 +252,15 @@ public class DemoGUI : MonoBehaviour
 
         if (logic.localPlayer.UseInterestGroups)
         {
-            playground.renderer.materials[1].color = startAlpha;
+            playground.GetComponent<Renderer>().materials[1].color = startAlpha;
         }
         else
         {
-            playground.renderer.materials[1].color = new Color(0,0,0,0);
+            playground.GetComponent<Renderer>().materials[1].color = new Color(0,0,0,0);
         }
 
         textureScale = this.logic.localPlayer.GridSize;
-        playground.renderer.material.mainTextureScale = new Vector2(textureScale, textureScale);
+        playground.GetComponent<Renderer>().material.mainTextureScale = new Vector2(textureScale, textureScale);
     }
 
     /// <summary>
@@ -300,13 +300,13 @@ public class DemoGUI : MonoBehaviour
                         float alpha = 1.0f;
                         if (!p.IsLocal && p.UpdateAge > 500)
                         {
-                            cube.renderer.material.shader = Shader.Find("Transparent/Diffuse");
+                            cube.GetComponent<Renderer>().material.shader = Shader.Find("Transparent/Diffuse");
                             alpha = (p.UpdateAge > 1000) ? 0.3f : 0.8f;
                         }
                         cube.transform.localScale = localScale;
 
                         Color cubeColor = DemoGUI.IntToColor(p.Color);
-                        cube.renderer.material.color = new Color(cubeColor.r, cubeColor.g, cubeColor.b, alpha);
+                        cube.GetComponent<Renderer>().material.color = new Color(cubeColor.r, cubeColor.g, cubeColor.b, alpha);
                         cube.transform.position = new Vector3(p.PosX * localScale.x + localScale.x / 2, scaleRatio / 2, p.PosY * localScale.y + localScale.y / 2);
                         break;
                     }

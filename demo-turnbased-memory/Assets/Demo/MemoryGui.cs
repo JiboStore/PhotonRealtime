@@ -201,7 +201,7 @@ public class MemoryGui : MonoBehaviour
 
         if (this.GameClientInstance.CurrentRoom != null)
         {
-            GUIText pointsGuiText = this.InGameScoresText.guiText;
+            GUIText pointsGuiText = this.InGameScoresText.GetComponent<GUIText>();
             
             Player other = this.GameClientInstance.Opponent;
             if (other == null)
@@ -259,12 +259,12 @@ public class MemoryGui : MonoBehaviour
 
         if (string.IsNullOrEmpty(theText))
         {
-            txt.guiText.enabled = false;
+            txt.GetComponent<GUIText>().enabled = false;
         }
         else
         {
-            txt.guiText.enabled = true;
-            txt.guiText.text = theText;
+            txt.GetComponent<GUIText>().enabled = true;
+            txt.GetComponent<GUIText>().text = theText;
         }
     }
 
@@ -386,7 +386,7 @@ public class MemoryGui : MonoBehaviour
     /// <remarks>Only if the application is setup as "IsPersistent" via WebHooks in the Dashboard, the app can have inactive players.</remarks>
     public void LeaveGameMsg(bool doAbandon)
     {
-        this.InGameInfoText.guiText.enabled = false;
+        this.InGameInfoText.GetComponent<GUIText>().enabled = false;
         
         this.GameClientInstance.OpLeaveRoom(!doAbandon);    // creates the actual call to leave/abandon the room
 

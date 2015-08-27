@@ -229,7 +229,7 @@ public class TileMono : MonoBehaviour
         // update material
         if (newContent.Material != null)
         {
-            this.renderer.material = newContent.Material;
+            this.GetComponent<Renderer>().material = newContent.Material;
         }
 
         if (this.ClickCall != null)

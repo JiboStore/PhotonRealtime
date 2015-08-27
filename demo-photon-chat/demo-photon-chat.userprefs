@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PhotonChatApi/ChatClient.cs">
+    <Files>
+      <File FileName="Assets/Demo Chat/ChatGui.cs" Line="302" Column="45" />
+      <File FileName="Assets/PhotonChatApi/ChatClient.cs" Line="791" Column="9" />
+      <File FileName="Assets/PhotonChatApi/ChatOperationCode.cs" Line="24" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
