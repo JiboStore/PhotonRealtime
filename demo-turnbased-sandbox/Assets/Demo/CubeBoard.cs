@@ -54,7 +54,7 @@ public class CubeBoard : MonoBehaviour
         {
             int cubeColor = TileValues[i];
             GameObject cube = this.TileGameObjects[i];
-            cube.renderer.material.SetColor("_Color", colors[cubeColor]);
+            cube.GetComponent<Renderer>().material.SetColor("_Color", colors[cubeColor]);
         }
     }
 
@@ -74,7 +74,7 @@ public class CubeBoard : MonoBehaviour
             cube.name = cube.name + i;
 
             int cubeColor = TileValues[i];
-            cube.renderer.material.SetColor("_Color", colors[cubeColor]);
+            cube.GetComponent<Renderer>().material.SetColor("_Color", colors[cubeColor]);
 
             this.TileGameObjects.Add(i, cube);
 
