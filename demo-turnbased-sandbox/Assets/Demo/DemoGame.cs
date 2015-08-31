@@ -40,7 +40,7 @@ public class DemoGame : LoadBalancingClient
         base.OnOperationResponse(operationResponse);
         // this.DebugReturn(DebugLevel.ERROR, operationResponse.ToStringFull());    // log as ERROR to make sure it's not filtered out due to log level
 
-		Debug.Log("[DemoGame] OnOperationResponse: " + operationResponse.ToStringFull());
+		Debug.Log("[DemoGame] OnOperationResponse: {" + operationResponse.OperationCode + "} <" + operationResponse.ReturnCode + "> >>> " + operationResponse.ToString ());
 
         switch (operationResponse.OperationCode)
         {
@@ -141,7 +141,7 @@ public class DemoGame : LoadBalancingClient
 
     public override void OnEvent(EventData photonEvent)
     {
-		Debug.Log("[DemoGame] OnEvent: " + photonEvent.ToStringFull());
+		Debug.Log("[DemoGame] OnEvent: {" + photonEvent.Code + "} >>> " + photonEvent.ToString());
 
         base.OnEvent(photonEvent);
 

@@ -1,24 +1,23 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PhotonLoadbalancingApi/LoadBalancingClient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Demo/DemoGame.cs">
     <Files>
       <File FileName="Assets/Demo/DemoPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Demo/DemoGame.cs" Line="178" Column="1" />
-      <File FileName="Assets/Demo/DemoGUI.cs" Line="26" Column="48" />
+      <File FileName="Assets/Demo/DemoGame.cs" Line="202" Column="47" />
+      <File FileName="Assets/Demo/DemoGUI.cs" Line="104" Column="10" />
       <File FileName="Assets/PhotonLoadbalancingApi/Extensions.cs" Line="1" Column="1" />
       <File FileName="Assets/Demo/CubeBoard.cs" Line="1" Column="1" />
       <File FileName="Assets/PhotonLoadbalancingApi/RoomInfo.cs" Line="1" Column="1" />
-      <File FileName="Assets/PhotonLoadbalancingApi/LoadBalancingClient.cs" Line="632" Column="4" />
-      <File FileName="Assets/PhotonLoadbalancingApi/LoadBalancingPeer.cs" Line="465" Column="14" />
+      <File FileName="Assets/PhotonLoadbalancingApi/LoadBalancingPeer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="40" />
-      <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="74" />
-      <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="140" />
-      <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="178" />
-      <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="254" />
+      <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="78" />
+      <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="146" />
+      <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="185" />
+      <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/Demo/DemoGame.cs" line="261" />
       <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/PhotonLoadbalancingApi/LoadBalancingClient.cs" line="583" />
       <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/PhotonLoadbalancingApi/LoadBalancingClient.cs" line="631" />
       <Breakpoint file="/Development/GitHub/PhotonPun/Photon-Unity3D-Sdk_v4-0-0-10/demo-turnbased-sandbox/Assets/PhotonLoadbalancingApi/LoadBalancingClient.cs" line="687" />
