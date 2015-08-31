@@ -1,3 +1,5 @@
 Library
 Temp
 *.app
+demo-turnbased-sandbox/Build/xcodebuild
+*.apk
