@@ -40,6 +40,8 @@ public class DemoGame : LoadBalancingClient
         base.OnOperationResponse(operationResponse);
         // this.DebugReturn(DebugLevel.ERROR, operationResponse.ToStringFull());    // log as ERROR to make sure it's not filtered out due to log level
 
+		Debug.Log("[DemoGame] OnOperationResponse: " + operationResponse.ToStringFull());
+
         switch (operationResponse.OperationCode)
         {
             case (byte)OperationCode.WebRpc:
@@ -71,6 +73,8 @@ public class DemoGame : LoadBalancingClient
 
     private void OnWebRpcResponse(WebRpcResponse response)
     {
+		Debug.Log("[DemoGame] OnWebRpcResponse: " + response.ToStringFull());
+
         if (response.ReturnCode != 0)
         {
             Debug.Log(response.ToStringFull());     // in an error case, it's often helpful to see the full response
@@ -137,6 +141,8 @@ public class DemoGame : LoadBalancingClient
 
     public override void OnEvent(EventData photonEvent)
     {
+		Debug.Log("[DemoGame] OnEvent: " + photonEvent.ToStringFull());
+
         base.OnEvent(photonEvent);
 
         switch (photonEvent.Code)
@@ -175,6 +181,7 @@ public class DemoGame : LoadBalancingClient
 
     public override void OnStatusChanged(StatusCode statusCode)
     {
+		Debug.Log("[DemoGame] OnStatusChanged: " + statusCode.ToString());
         base.OnStatusChanged(statusCode);
 
         switch (statusCode)
